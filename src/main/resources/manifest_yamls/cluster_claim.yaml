@@ -1,0 +1,9 @@
+apiVersion: hive.openshift.io/v1
+kind: ClusterClaim
+metadata:
+  name: spark-03
+  namespace: spark-pool
+  labels:
+    cluster.open-cluster-management.io/clusterset: sparks
+spec:
+  clusterPoolName: spark-pool
